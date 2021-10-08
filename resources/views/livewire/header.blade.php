@@ -1,10 +1,10 @@
  <header class="header">
-     <div class="navbar-area">
-         <div class="container relative">
-             <div class="row items-center">
-                 <div class="w-full">
-                     <nav class="flex items-center justify-between py-4 navbar navbar-expand-lg">
-                         <a class="navbar-brand mr-5" href="index.html">
+     <div class="navbar-area ">
+         <div class="">
+             <div class="row items-center mt-10">
+                 <div class="w-full sticky ">
+                     <nav class="flex items-center justify-between py-2  navbar navbar-expand-lg">
+                         <a class="navbar-brand mr-5" href="{{route('/')}}">
                              <img src="{{ asset('assets/img/logo/logo.svg') }}" alt="Logo" />
                          </a>
                          <button class="block navbar-toggler focus:outline-none lg:hidden" type="button"
@@ -15,12 +15,15 @@
                              <span class="toggler-icon"></span>
                          </button>
 
-                         <div class="absolute left-0 z-20 hidden w-full px-5 py-3 duration-300 bg-white shadow lg:w-auto collapse navbar-collapse lg:block top-full mt-full lg:static lg:bg-transparent lg:shadow-none"
+                         <div class="absolute left-0 z-20 hidden w-full px-5 py-3 duration-300 bg-white shadow lg:w-auto collapse navbar-collapse lg:block  lg:static lg:bg-transparent lg:shadow-none"
                              id="navbarOne">
                              <ul id="nav" class="items-center content-start mr-auto lg:justify-end navbar-nav lg:flex">
                                  <li class="nav-item ml-5 lg:ml-11">
-                                     <a class="page-scroll active" href="#home">Home</a>
-                                 </li>
+                                     <a class="page-scroll active" href="{{route('/')}}">Home</a>
+                                    </li>
+                                    <li class="nav-item ml-5 lg:ml-11">
+                                        <a class="page-scroll" href="{{route('courses')}}">Courses</a>
+                                    </li>
                                  <li class="nav-item ml-5 lg:ml-11">
                                      <a class="page-scroll" href="#features">Features</a>
                                  </li>
@@ -35,7 +38,7 @@
                                      <a class="page-scroll" href="#pricing">Pricing</a>
                                  </li>
                                  <li class="nav-item ml-5 lg:ml-11">
-                                     <a class="page-scroll" href="#testimonials">Clients</a>
+                                     <a class="page-scroll" href="{{route('contact')}}">Contact Us</a>
                                  </li>
                              </ul>
                          </div>

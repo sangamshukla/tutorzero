@@ -14,7 +14,7 @@
             logo.src = 'assets/img/logo/logo-2.svg';
         } else {
             header_navbar.classList.remove("sticky");
-            logo.src = 'assets/img/logo/logo.svg';
+            logo.src = 'assets/img/logo/logo-2.svg';
         }
 
         // ========== show or hide the back-top-top button
@@ -29,18 +29,18 @@
     // Get the navbar
 
 
-    // for menu scroll 
-    var pageLink = document.querySelectorAll('.page-scroll');
-    
-    pageLink.forEach(elem => {
-        elem.addEventListener('click', e => {
-            e.preventDefault();
-            document.querySelector(elem.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth',
-                offsetTop: 1 - 60,
-            });
-        });
-    });
+    // for menu scroll
+    // var pageLink = document.querySelectorAll('.page-scroll');
+
+    // pageLink.forEach(elem => {
+    //     elem.addEventListener('click', e => {
+    //         e.preventDefault();
+    //         document.querySelector(elem.getAttribute('href')).scrollIntoView({
+    //             behavior: 'smooth',
+    //             offsetTop: 1 - 60,
+    //         });
+    //     });
+    // });
 
     // section menu active
 	function onScroll(event) {
@@ -64,7 +64,7 @@
 	window.document.addEventListener('scroll', onScroll);
 
     //===== close navbar-collapse when a  clicked
-    let navbarToggler = document.querySelector(".navbar-toggler");    
+    let navbarToggler = document.querySelector(".navbar-toggler");
     var navbarCollapse = document.querySelector(".navbar-collapse");
 
     document.querySelectorAll(".page-scroll").forEach(e =>
@@ -76,7 +76,7 @@
     navbarToggler.addEventListener('click', function() {
         navbarToggler.classList.toggle("active");
         // navbarCollapse.classList.toggle('show')
-    }) 
+    })
 
 
 	// WOW active
@@ -103,7 +103,7 @@
     // pricing tab
     const tabs = document.querySelectorAll('[data-tab-target]')
     const tabContents = document.querySelectorAll('[data-tab-content]')
-    
+
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
         const target = document.querySelector(tab.dataset.tabTarget)

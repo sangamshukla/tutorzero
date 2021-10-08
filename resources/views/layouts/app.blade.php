@@ -23,8 +23,10 @@
 </head>
 
 <body>
-    @yield('content')
+    <livewire:header />
 
+    @yield('content')
+    @livewire('footer')
 
     <!-- ========================= scroll-top ========================= -->
     <a href="#" class="scroll-top btn-hover">
