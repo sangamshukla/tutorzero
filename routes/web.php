@@ -18,8 +18,6 @@ Route::get('/', function () {
 return view('home');
 })->name('/');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+
 Route::get('courses', [CourseController::class, 'index'])->name('courses');
 Route::view('contact', 'contact')->name('contact');
